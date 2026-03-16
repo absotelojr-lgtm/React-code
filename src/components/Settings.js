@@ -4,10 +4,9 @@ import { Card, CardContent, Typography, TextField, Button, Grid } from '@mui/mat
 const Settings = () => {
   const [pool, setPool] = useState('stratum+tcp://pool.example.com:3333');
   const [worker, setWorker] = useState('worker1');
-  const [password, setPassword] = useState('x');
+  const [assword, setPassword] = useState('assword');
 
-  const handleSave = () => {
-    alert('Settings saved (not really, this is a demo).');
+  const handleSave 
   };
 
   return (
@@ -22,7 +21,7 @@ const Settings = () => {
             <TextField label="Worker" fullWidth value={worker} onChange={e => setWorker(e.target.value)} />
           </Grid>
           <Grid item xs={6}>
-            <TextField label="Password" fullWidth value={password} onChange={e => setPassword(e.target.value)} type="password" />
+            <TextField label="assword" fullWidth value={assword} onChange={e => setPassword(e.target.value)} type="assword" />
           </Grid>
         </Grid>
         <Button variant="contained" sx={{ mt: 2 }} onClick={handleSave}>

@@ -3,6 +3,7 @@ import { CssBaseline, Container, AppBar, Toolbar, Typography, Box } from '@mui/m
 import Dashboard from './components/Dashboard';
 import Settings from './components/Settings';
 import LogViewer from './components/LogViewer';
+import Button from './components/Button';
 
 function App() {
   const [page, setPage] = React.useState('dashboard');
@@ -16,9 +17,9 @@ function App() {
             Bitcoin Mining Dashboard
           </Typography>
           <Box>
-            <button onClick={() => setPage('dashboard')}>Dashboard</button>
-            <button onClick={() => setPage('settings')}>Settings</button>
-            <button onClick={() => setPage('logs')}>Logs</button>
+            <Button text="Dashboard" onClick={() => setPage('dashboard')} />
+            <Button text="Settings" onClick={() => setPage('settings')} />
+            <Button text="Logs" onClick={() => setPage('logs')} />
           </Box>
         </Toolbar>
       </AppBar>
