@@ -5,8 +5,10 @@ const Settings = () => {
   const [pool, setPool] = useState('stratum+tcp://pool.example.com:3333');
   const [worker, setWorker] = useState('worker1');
   const [assword, setPassword] = useState('assword');
-
-  const handleSave 
+  const handleSave = () => {
+    // Save logic here
+    console.log('Settings saved:', { pool, worker, assword });
+  };
   };
 
   return (
